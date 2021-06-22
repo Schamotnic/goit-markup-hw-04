@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
 }
 ul,
+ol,
+li{
+ list-style: none; 
+}
 
 
 :root {
@@ -81,16 +85,24 @@ body {
   list-style-type: none;
 }
 
-/* стилизация почты и телефонав хедерре портфолио */
+/* стилизация почты и телефонав хедерре студии и портфолио */
+
+
 
 .icon {
-  align-content: center;
-  display: inline-flex;
-  margin: 0px;
+ fill: #757575;
+   margin: 0px;
+  width: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
+ 
+ 
 
 .link-post {
-  margin-left: 315px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left:auto;
   list-style: none;
   display: flex;
   padding: 0px;
@@ -204,6 +216,8 @@ body {
   margin-left: 50px;
 }
 
+
+
 .link.active,
 .link:focus,
 .link:hover {
@@ -212,12 +226,12 @@ body {
 }
 
 /* стили контактов */
-/* надо посмотреть тут параметрі для конверта */
+
 
 .link-contact {
   margin-left: 315;
   align-items: center;
-  /* display: flex; */
+  display: flex;
   padding: 0px;
   font-style: normal;
   color: var(--main-colors-text);
@@ -226,6 +240,9 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
+
+
+
 .link-contact:focus,
 .link-contact:hover {
   color: var(--accent);
@@ -352,6 +369,29 @@ h3 {
   margin-left: 30px;
 }
 
+/* стилизация социальных иконок в команде */
+.social-icon-team{
+  fill:#AFB1B8;
+}
+.social-icon-team:hover{
+     fill: #03a9f4;
+  }
+
+ 
+
+
+
+.demyanenko{
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.thumba-team{
+  padding: 30px;
+  background-color: var(--white-color-text);
+}
 /* секция наша команда */
 
 .subject-h2 {
@@ -370,7 +410,7 @@ h3 {
 }
 
 .subject-h3 {
-  padding: 30px 0px 0px 0px;
+  
   margin: 0px;
   color: var(--secondary-text-color);
   font-weight: var(--font-weight-medium);
@@ -381,7 +421,7 @@ h3 {
 
 .text-p {
   padding: 10px 0px 0px 0px;
-  margin: 0px;
+  margin: 0px 0px 16px 0px;
   color: var(--main-colors-text);
   font-size: 16px;
   line-height: 1.18;
