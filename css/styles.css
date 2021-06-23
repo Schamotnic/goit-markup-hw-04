@@ -483,6 +483,7 @@ h3 {
         }
 
         .icon-customers{
+          padding: 0px;
           margin: 0px;
           display: flex;
           justify-content: space-between;
@@ -494,14 +495,42 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--icon-color);
+    color: var(--icon-social-color);
     border-radius: var(--border-radius);
     border: 1px solid var(--icon-social-color);
 }
-.icon-company {
-  fill: currentColor;
+         
+
+
+.our-customers:hover,
+.our-customers:focus {
+  border: 1px solid var(--accent);
+  color: var(--accent);
 }
 
+.icon-company {
+  fill: currentColor;
+  
+}
+/* стилизация футера дива с иконками */
+.join-us-list{
+  display: flex;
+  
+}
+.join{
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+.join-us{
+  
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+.join-us .us-icons-join + .us-icons-join{
+  margin-left: 10px;
+}
 
         
       
@@ -519,6 +548,7 @@ h3 {
     }
     
     .address-box {
+    margin-right: 0px;
       display: block;
       margin-bottom: 9px;
       font-style: normal;
