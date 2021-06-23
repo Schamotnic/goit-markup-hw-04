@@ -27,6 +27,8 @@ li{
   --main-background-color: #e5e5e5;
   --secondary-background-color: #2f303a;
   --third-background-color: #f5f4fa;
+  --icon-social-color:#AFB1B8;
+
 }
 /* глобальные стили */
 .section {
@@ -370,23 +372,48 @@ h3 {
 }
 
 /* стилизация социальных иконок в команде */
-.social-icon-team{
-  fill:#AFB1B8;
+
+    
+
+
+
+
+
+.dddddd :hover{
+background-color:#2196f3 ;
+fill:#ffffff;
 }
-.social-icon-team:hover{
-     fill: #03a9f4;
-  }
+
+
+
+.dddddd{
+  background-color: blue;
+  border-radius: 50%;
+    display: flex;
+    height: 44px;
+    width: 44px;
+    justify-content: center;
+      align-items: center;
+     fill:var(--icon-social-color); 
+    }
+  
+    .demyanenko{
+      
+      padding: 0px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+  
+    
+  
+   
+
 
  
 
 
-
-.demyanenko{
-  padding: 0px;
-  display: flex;
-  justify-content: space-between;
-}
-
+    
 
 .thumba-team{
   padding: 30px;
