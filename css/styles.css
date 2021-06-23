@@ -28,6 +28,7 @@ li{
   --secondary-background-color: #2f303a;
   --third-background-color: #f5f4fa;
   --icon-social-color:#AFB1B8;
+  --border-radius: 4px;
 
 }
 /* глобальные стили */
@@ -375,26 +376,25 @@ h3 {
 
     
 
-
-
-
-
-.dddddd :hover{
-background-color:#2196f3 ;
-fill:#ffffff;
+.social-icon-team{
+  fill: currentColor
 }
 
 
+.social-icon :hover{
+  background-color:#2196f3 ;
+  color:#ffffff;
+}
 
-.dddddd{
-  background-color: blue;
+
+.social-icon{
   border-radius: 50%;
     display: flex;
     height: 44px;
     width: 44px;
     justify-content: center;
       align-items: center;
-     fill:var(--icon-social-color); 
+     color:#AFB1B8; 
     }
   
     .demyanenko{
@@ -405,6 +405,219 @@ fill:#ffffff;
     }
 
   
+    .thumba-team{
+      padding: 30px;
+      background-color: var(--white-color-text);
+    }
+    /* секция наша команда */
+    
+    .subject-h2 {
+      font-weight: var(--font-weight-bold);
+      font-size: 36px;
+      line-height: 1.16;
+      margin: 0px 0px 50px 0px;
+      text-align: center;
+      color: var(--secondary-text-color);
+    }
+    
+    .section-team {
+      padding-top: 94px;
+      padding-bottom: 94px;
+      background-color: #f5f4fa;
+    }
+    
+    .subject-h3 {
+      
+      margin: 0px;
+      color: var(--secondary-text-color);
+      font-weight: var(--font-weight-medium);
+      font-size: 16px;
+      line-height: 1.18;
+      text-align: center;
+    }
+    
+    .text-p {
+      padding: 10px 0px 0px 0px;
+      margin: 0px 0px 16px 0px;
+      color: var(--main-colors-text);
+      font-size: 16px;
+      line-height: 1.18;
+      text-align: center;
+    }
+    
+    .text {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    
+    .subjec,
+    .text {
+      text-align: center;
+    }
+    
+    .team .person + .person {
+      margin-left: 30px;
+    }
+    
+    .our-team {
+      background-color: var(--third-background-color);
+    }
+    .subject-h2 {
+      margin-bottom: 50px;
+      text-align: center;
+      color: var(--secondary-text-color);
+    }
+    /* стилизация секции постоянные клиенти */
+
+
+
+    .regular-customers-h2{
+      padding: 0px;
+      margin:0px 0px 50px 0px;
+      font-weight:var(--font-weight-bold);
+      color: var(--secondary-text-color);
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1.16;
+      text-align: center;
+        }
+
+        .icon-customers{
+          margin: 0px;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .our-customers{
+          width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--icon-color);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--icon-social-color);
+}
+.icon-company {
+  fill: currentColor;
+}
+
+
+        
+      
+  
+    
+    /* стилизация  футера */
+    
+    .logo-footer {
+      margin-bottom: 20px;
+      padding: 0px;
+      text-decoration: none;
+      font-family: "Raleway", sans-serif;
+      font-size: 26px;
+      line-height: 1.2;
+    }
+    
+    .address-box {
+      display: block;
+      margin-bottom: 9px;
+      font-style: normal;
+      color: var(--white-color-text);
+      text-decoration: none;
+    }
+    
+    .footer-address {
+      background-color: var(--secondary-background-color);
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    
+    .logo-footer {
+      display: block;
+    }
+    
+    .link-footer {
+      list-style: none;
+      padding: 0;
+      margin: 0px;
+    }
+    .item-mail {
+      margin-bottom: 9px;
+    }
+    
+    /* портфолио кнопки */
+    
+    .list-button {
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+    
+    .list-button .type + .type {
+      margin-left: 8px;
+    }
+    
+    .pagination {
+      text-align: center;
+      padding: 6px 22px;
+      display: inline-block;
+      border: 0px;
+      color: var(--secondary-text-color);
+      background-color: var(--third-background-color);
+      left: 576px;
+      top: 174px;
+      background: #f5f4fa;
+      border-radius: 4px;
+    }
+    
+    .list-pagination {
+      text-align: center;
+      min-width: 73px;
+      height: 38px;
+      border-radius: 4px;
+      padding: 6px 22px;
+      color: #ffffff;
+      background-color: var(--accent);
+      border: 0px;
+    }
+    
+    .website-btn > .pagination {
+      min-width: 128px;
+      height: 38px;
+    }
+    
+    .application-btn > .pagination {
+      display: inline-block;
+      min-width: 145px;
+      height: 38px;
+    }
+    
+    .application > .pagination {
+      display: inline-block;
+      min-width: 145px;
+      height: 38px;
+    }
+    
+    .design-bnt > .pagination {
+      display: inline-block;
+      min-width: 103px;
+      height: 38px;
+    }
+    
+    .marketing-btn > .pagination {
+      display: inline-block;
+      min-width: 130px;
+      height: 38px;
+    }
+    
+    .pagination:focus,
+    .pagination:hover {
+      color: var(--white-color-text);
+      background-color: var(--accent);
+    }
+
+
+
+
     
   
    
@@ -415,173 +628,3 @@ fill:#ffffff;
 
     
 
-.thumba-team{
-  padding: 30px;
-  background-color: var(--white-color-text);
-}
-/* секция наша команда */
-
-.subject-h2 {
-  font-weight: var(--font-weight-bold);
-  font-size: 36px;
-  line-height: 1.16;
-  margin: 0px 0px 50px 0px;
-  text-align: center;
-  color: var(--secondary-text-color);
-}
-
-.section-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: #f5f4fa;
-}
-
-.subject-h3 {
-  
-  margin: 0px;
-  color: var(--secondary-text-color);
-  font-weight: var(--font-weight-medium);
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-}
-
-.text-p {
-  padding: 10px 0px 0px 0px;
-  margin: 0px 0px 16px 0px;
-  color: var(--main-colors-text);
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-}
-
-.text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.subjec,
-.text {
-  text-align: center;
-}
-
-.team .person + .person {
-  margin-left: 30px;
-}
-
-.our-team {
-  background-color: var(--third-background-color);
-}
-.subject-h2 {
-  margin-bottom: 50px;
-  text-align: center;
-  color: var(--secondary-text-color);
-}
-
-/* стилизация  футера */
-
-.logo-footer {
-  margin-bottom: 20px;
-  padding: 0px;
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-.address-box {
-  display: block;
-  margin-bottom: 9px;
-  font-style: normal;
-  color: var(--white-color-text);
-  text-decoration: none;
-}
-
-.footer-address {
-  background-color: var(--secondary-background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.logo-footer {
-  display: block;
-}
-
-.link-footer {
-  list-style: none;
-  padding: 0;
-  margin: 0px;
-}
-.item-mail {
-  margin-bottom: 9px;
-}
-
-/* портфолио кнопки */
-
-.list-button {
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.list-button .type + .type {
-  margin-left: 8px;
-}
-
-.pagination {
-  text-align: center;
-  padding: 6px 22px;
-  display: inline-block;
-  border: 0px;
-  color: var(--secondary-text-color);
-  background-color: var(--third-background-color);
-  left: 576px;
-  top: 174px;
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-
-.list-pagination {
-  text-align: center;
-  min-width: 73px;
-  height: 38px;
-  border-radius: 4px;
-  padding: 6px 22px;
-  color: #ffffff;
-  background-color: var(--accent);
-  border: 0px;
-}
-
-.website-btn > .pagination {
-  min-width: 128px;
-  height: 38px;
-}
-
-.application-btn > .pagination {
-  display: inline-block;
-  min-width: 145px;
-  height: 38px;
-}
-
-.application > .pagination {
-  display: inline-block;
-  min-width: 145px;
-  height: 38px;
-}
-
-.design-bnt > .pagination {
-  display: inline-block;
-  min-width: 103px;
-  height: 38px;
-}
-
-.marketing-btn > .pagination {
-  display: inline-block;
-  min-width: 130px;
-  height: 38px;
-}
-
-.pagination:focus,
-.pagination:hover {
-  color: var(--white-color-text);
-  background-color: var(--accent);
-}
