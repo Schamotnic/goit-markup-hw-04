@@ -15,6 +15,7 @@ li{
 
 
 :root {
+  --max-width-site: 1600px;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
@@ -161,6 +162,7 @@ body {
 
 .caption-subtitle {
   padding: 20px 24px;
+ 
 }
 
 .caption {
@@ -178,6 +180,17 @@ body {
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
+}
+/* добавление теней и ховера карточкам в портфолио */
+.card{
+  
+}
+
+.card:hover,
+.card:focus {
+  
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* стили логотипа */
@@ -200,6 +213,11 @@ body {
 .logo-accent {
   color: var(--accent);
 }
+
+/* стилизация героя фото команди */
+
+
+
 
 /* стили навигации */
 
@@ -279,9 +297,18 @@ body {
 }
 
 .section-hero {
+ margin: auto;
   padding: 200px 0px;
+  max-width: var(--max-width-site);
   background-color: var(--secondary-background-color);
+  background-image:linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ), url(../images/Img-ouer-team.jpg);
 }
+  
+  
+  
 
 .title {
   margin-bottom: 30px;
@@ -408,6 +435,9 @@ h3 {
     .thumba-team{
       padding: 30px;
       background-color: var(--white-color-text);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+       0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     }
     /* секция наша команда */
     
@@ -512,22 +542,59 @@ h3 {
   fill: currentColor;
   
 }
-/* стилизация футера дива с иконками */
-.join-us-list{
-  display: flex;
+/* стилизация футера дива с иконками соцсетей */
+
   
+  .join-us-icon{
+    color: #ffffff;
+    background-color:rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%
+  }
+
+  .us-icons-join:hover,
+  .us-icons-join :focus{
+background-color:var(--accent);
+    }
+
+    .us-icons-join{
+     border-radius: 50%; 
+    }
+  
+
+  .join-us-foter{
+    fill: currentColor
+  }
+
+
+.us-icons{
+display: inline-block;
 }
+
 .join{
-  display: block;
-  margin: 0px;
+  color:var(--white-color-text) ;
+  font-weight: var(--font-weight-bold);
+font-size: 14px;
+line-height: 1.17;
+text-transform: uppercase;
+ margin: 0px 0px 20px 0px;
   padding: 0px;
 }
+ 
+
+
+
 .join-us{
-  
   display: flex;
-  margin: 0px;
+   margin: 0px;
   padding: 0px;
 }
+  
+ 
 .join-us .us-icons-join + .us-icons-join{
   margin-left: 10px;
 }
@@ -537,8 +604,20 @@ h3 {
   
     
     /* стилизация  футера */
+
+    .box-web-foter{
+display: inline-block;
+margin-right: 70px;
+    }
+
+    .studio{
+      color: #ffffff;
+      margin: 0px;
+display: block;
+    }
     
     .logo-footer {
+      color: #ffffff;
       margin-bottom: 20px;
       padding: 0px;
       text-decoration: none;
@@ -548,7 +627,7 @@ h3 {
     }
     
     .address-box {
-    margin-right: 0px;
+    margin: 0px;
       display: block;
       margin-bottom: 9px;
       font-style: normal;
