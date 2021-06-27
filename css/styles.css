@@ -149,8 +149,14 @@ body {
 }
 
 /* тилизация списка карточек портфолио */
+.card-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
 .list-card {
-  width: 1200px;
   margin-top: -30px;
   margin-left: -30px;
   margin: 0px;
@@ -172,7 +178,7 @@ body {
 }
 
 .list {
-  margin: 0px 0px;
+  margin: 0px;
   display: flex;
   padding: 0px;
   list-style: none;
@@ -184,7 +190,9 @@ body {
 }
 
 .caption-subtitle {
+  border: 1px solid #eeeeee;
   padding: 20px 24px;
+  border-top: 0px;
 }
 
 .caption {
@@ -203,8 +211,11 @@ body {
 }
 /* добавление теней и ховера карточкам в портфолио */
 
-.card:focus,
-.card:hover {
+.card-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -482,11 +493,6 @@ h3 {
   margin-bottom: 0px;
 }
 
-.subjec,
-.text {
-  text-align: center;
-}
-
 .team .person + .person {
   margin-left: 30px;
 }
@@ -595,6 +601,7 @@ h3 {
 /* стилизация  футера */
 .address {
   display: flex;
+  align-items: baseline;
 }
 
 .box-web-foter {
